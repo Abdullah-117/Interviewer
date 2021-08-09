@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="static/interview.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--BootStrab tag-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!--BootStrab tag-->
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=, initial-scale=1.0">
+   <title>Interviewer</title>
+</head>
+
+   <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <!--<a class="navbar-brand" href="#"></a>-->
+          <img id="logo" src="static/images/logo5.png" alt="pic"> 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="/index">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/login">Login</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+     
+      <center>
+      <form action="{{ url_for('reg') }}" method="POST"class="rform">
+        <fieldset>
+            <legend>
+                <h2>Registration</h2>
+            </legend>
+       <br><br><br>
+
+        <label for="email">Email</label> <br>
+        <input type="email" name="email" id="email" required>   <br>
+        <label for="username">username</label> <br>
+        <input type="text" name="un" id="username" required> <br>  
+        <label for="psw">Password</label><br>
+        <input type="password" name="pw"  id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+        title="Must contain at least one number and one 
+        uppercase and lowercase letter, and at least 8 or more characters" required> <br><br><br>
+        
+        <input type="submit" id="fsubmit" value="submit">
+        <br><br>
+
+                
+    
+    </fieldset>
+</form>
+</center>
+<div class="footer">
+    <pre> 
+        <small>
+            
+              <a href="http://" class="grey">About us</a>                 <a href="http://" class="grey">Contact us</a>                             <a href="http://" class="grey">Home</a>                                    <a href="http://" class="grey">Join us</a>                    <a href="http://" class="grey">Companies</a>       
+          </small>
+    </pre>
+
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-instagram"></a>
+
+  </div>
+
+  

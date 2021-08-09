@@ -1,0 +1,34 @@
+{
+    
+         "database_specialist":
+        {"name": "Mr. Ahmed",
+        "title": "Database specialist",
+        "position": "SQL developer",
+        "number": 343211}
+    ,
+
+    
+
+    
+        "solution_engineer":
+       {"name": "Jake",
+        "title": "Solutions engineer",
+        "position": "UI/UX Designer",
+        "number": 332049}
+    ,
+
+    
+        "software_engineer":
+        {"name": "Abdullah",
+        "title": "Software engineer",
+        "position": "Software developer",
+        "number": 449583}
+    ,
+
+    
+    "qa_engineer":
+    {"name": "chris",
+    "title": "Recruitment manager",
+    "position": "QA Engineer",
+    "number": 4495983}
+}
